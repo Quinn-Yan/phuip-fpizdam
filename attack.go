@@ -3,7 +3,7 @@ package main
 import (
 	"bytes"
 	"log"
-	"net/url"
+	// "net/url"
 )
 
 var chain = []string{
