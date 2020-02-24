@@ -1,4 +1,4 @@
-module github.com/neex/phuip-fpizdam
+module github.com/hktalent/phuip-fpizdam
 
 go 1.12
 
